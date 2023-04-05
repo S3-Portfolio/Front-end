@@ -1,39 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from 'react';
+import './Navbar.css';
+//https://www.geeksforgeeks.org/create-a-responsive-navbar-using-reactjs/
+function nav() {
   return (
-    <div className="App">
-      <header>
-        <h2>DiveSpot</h2>
-      </header>
-
+    <div className="nav">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">DiveSpot</a>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="">Home <span class="sr-only"></span></a>
+              <a class="nav-link" href="./Home">Home <span class="sr-only"></span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">Dives</a>
+              <a class="nav-link" href="./Dive">Dives</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">Fish</a>
+              <a class="nav-link" href="./Fish">Fish</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">About</a>
+              <a class="nav-link" href="./About">About</a>
             </li>
           </ul>
         </div>
       </nav>
-
-      <img src="" class="img-fluid" alt="Responsive image"/>
     </div>
   );
 }
 
-export default App;
+export default nav;
