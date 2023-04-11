@@ -1,17 +1,98 @@
 
 import React from 'react';
+import image from './Fish.jpg';
+import './Fish.css';
   
 const Fish = () => {
   return (
     <div
       style={{
         display: 'flex',
-        justifyContent: 'Right',
-        alignItems: 'Right',
-        height: '100vh'
+        flexWrap: 'wrap',
+        //justifyContent: 'Center',
+        //alignItems: 'Right',
+        height: '100vh',
       }}
     >
-      <h1>Annual Report</h1>
+      <div name='fishcard'>
+  <div class="card">
+    <a href="http://localhost:3000/FishInfo"/>
+    <img class="card-img-top" src={image} alt="Card image cap"/>
+    <div class="card-body">
+      <p class="card-text">Fish name</p>
+    </div>
+  </div>
+    <div class="card">
+    <a href="http://localhost:3000/FishInfo"/>
+      <img class="card-img-top" src={image} alt="Card image cap"/>
+      <div class="card-body">
+        <p class="card-text">Fish name</p>
+      </div>
+    </div>
+    <div class="card">
+    <a href="http://localhost:3000/FishInfo"/>
+      <img class="card-img-top" src={image} alt="Card image cap"/>
+      <div class="card-body">
+        <p class="card-text">Fish name</p>
+      </div>
+    </div>
+    <div class="card">
+    <a href="http://localhost:3000/FishInfo"/>
+      <img class="card-img-top" src={image} alt="Card image cap"/>
+      <div class="card-body">
+        <p class="card-text">Fish name</p>
+      </div>
+    </div>
+    <div class="card">
+    <a href="http://localhost:3000/FishInfo"/>
+      <img class="card-img-top" src={image} alt="Card image cap"/>
+      <div class="card-body">
+        <p class="card-text">Fish name</p>
+      </div>
+    </div>
+    <div class="card">
+    <a href="http://localhost:3000/FishInfo"/>
+      <img class="card-img-top" src={image} alt="Card image cap"/>
+      <div class="card-body">
+        <p class="card-text">Fish name</p>
+      </div>
+    </div>
+    <div class="card">
+    <a href="http://localhost:3000/FishInfo"/>
+      <img class="card-img-top" src={image} alt="Card image cap"/>
+      <div class="card-body">
+        <p class="card-text">Fish name</p>
+      </div>
+    </div>
+    <div class="card">
+    <a href="http://localhost:3000/FishInfo"/>
+      <img class="card-img-top" src={image} alt="Card image cap"/>
+      <div class="card-body">
+        <p class="card-text">Fish name</p>
+      </div>
+    </div>
+    <div class="card">
+    <a href="http://localhost:3000/FishInfo"/>
+      <img class="card-img-top" src={image} alt="Card image cap"/>
+      <div class="card-body">
+        <p class="card-text">Fish name</p>
+      </div>
+    </div>
+    <div class="card">
+    <a href="http://localhost:3000/FishInfo"/>
+      <img class="card-img-top" src={image} alt="Card image cap"/>
+      <div class="card-body">
+        <p class="card-text">Fish name</p>
+      </div>
+    </div>
+    <div class="card">
+    <a href="http://localhost:3000/FishInfo"/>
+      <img class="card-img-top" src={image} alt="Card image cap"/>
+      <div class="card-body">
+        <p class="card-text">Fish name</p>
+      </div>
+    </div>
+</div>
     </div>
   );
 };

@@ -1,17 +1,19 @@
 
 import React from 'react';
+import image from './WorldMap.PNG';
   
 const Home = () => {
   return (
     <div
       style={{
         display: 'flex',
-        justifyContent: 'Right',
-        alignItems: 'Right',
+        justifyContent: 'Center',
+        //alignItems: 'Right',
         height: '100vh'
       }}
     >
-      <h1>Welcome to GeeksforGeeks</h1>
+      <h1>Welcome to DiveSpot</h1>
+      <img src={image} class="img-fluid" alt="Responsive image"></img>
     </div>
   );
 };

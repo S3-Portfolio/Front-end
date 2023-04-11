@@ -2,7 +2,7 @@ import React from 'react';
 import {
   Nav,
   NavLink,
-  //Bars,
+  Bars,
   NavMenu,
   //NavBtn,
   //NavBtnLink,
@@ -12,10 +12,10 @@ const Navbar = () => {
   return (
     <>
       <Nav>
-        
+        <Bars />
   
         <NavMenu>
-          <NavLink to='/Home' activeStyle>
+          <NavLink to='/' activeStyle>
             Home
           </NavLink>
           <NavLink to='/Dive' activeStyle>
