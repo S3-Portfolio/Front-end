@@ -1,6 +1,7 @@
 
 import React from 'react';
 import image from './Fish.jpg';
+import './Fish.css';
   
 const FishInfo = () => {
   return (
@@ -14,8 +15,8 @@ const FishInfo = () => {
       }}
     >
 
-      <div style="display: flex; flex-wrap: wrap;">
-  <div class="card" style="width: 15rem;">
+      <div id='fishcard'>
+  <div class="card">
     <img class="card-img-top" src={image} alt="Card image cap"/>
     <div class="card-body">
       <p class="card-text">Fish name</p>

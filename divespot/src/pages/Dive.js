@@ -22,41 +22,46 @@ const Dive = () => {
           </tr>
         </thead>
         <tbody>
+        <a href="http://localhost:3000/DiveInfo">
           <tr onclick="window.location='http://localhost:3000/DiveInfo'">
             <th scope="row">1</th>
             <td>Lorem Ipsum</td>
             <td>Lorem Ipsum</td>
             <td>Lorem Ipsum</td>
             <td>100</td>
-          </tr>
+          </tr></a>
+          <a href="http://localhost:3000/DiveInfo">
           <tr onclick="window.location='http://localhost:3000/DiveInfo'">
             <th scope="row">2</th>
             <td>Lorem Ipsum</td>
             <td>Lorem Ipsum</td>
             <td>Lorem Ipsum</td>
             <td>100</td>
-          </tr>
+          </tr></a>
+          <a href="http://localhost:3000/DiveInfo">
           <tr onclick="window.location='http://localhost:3000/DiveInfo'">
             <th scope="row">3</th>
             <td>Lorem Ipsum</td>
             <td>Lorem Ipsum</td>
             <td>Lorem Ipsum</td>
             <td>100</td>
-          </tr>
+          </tr></a>
+          <a href="http://localhost:3000/DiveInfo">
           <tr onclick="window.location='http://localhost:3000/DiveInfo'">
             <th scope="row">4</th>
             <td>Lorem Ipsum</td>
             <td>Lorem Ipsum</td>
             <td>Lorem Ipsum</td>
             <td>100</td>
-          </tr>
+          </tr></a>
+          <a href="http://localhost:3000/DiveInfo">
           <tr onclick="window.location='http://localhost:3000/DiveInfo'">
             <th scope="row">5</th>
             <td>Lorem Ipsum</td>
             <td>Lorem Ipsum</td>
             <td>Lorem Ipsum</td>
             <td>100</td>
-          </tr>
+          </tr></a>
         </tbody>
       </table>
     </div>

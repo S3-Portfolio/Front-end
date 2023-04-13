@@ -6,6 +6,8 @@ import Home from './pages/Index';
 import About from './pages/About';
 import Dive from './pages/Dive';
 import Fish from './pages/Fish';
+import FishInfo from './pages/FishInfo';
+import DiveInfo from './pages/DiveInfo';
 //import SignUp from './pages/signup';
   
 function App() {
@@ -16,9 +18,10 @@ function App() {
         <Route path='/' exact element ={<Home/>}></Route>
         <Route path='/Dive' element ={<Dive/>}></Route>
         <Route path='/Fish' element ={<Fish/>}></Route>
-
         <Route path='/About' element ={<About/>}></Route>
         
+        <Route path='/FishInfo' element ={<FishInfo/>}></Route>
+        <Route path='/DiveInfo' element ={<DiveInfo/>}></Route>
       </Routes>
     </Router>
   );

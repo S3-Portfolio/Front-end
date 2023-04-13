@@ -2,6 +2,7 @@
 import React from 'react';
 import image from './Fish.jpg';
 import './Fish.css';
+import { Link } from 'react-router-dom';
   
 const Fish = () => {
   return (
@@ -14,80 +15,91 @@ const Fish = () => {
         height: '100vh',
       }}
     >
-      <div name='fishcard'>
+      <div id='fishcard'>
   <div class="card">
-    <a href="http://localhost:3000/FishInfo"/>
+    <Link to="/FishInfo">
     <img class="card-img-top" src={image} alt="Card image cap"/>
+    </Link>
     <div class="card-body">
       <p class="card-text">Fish name</p>
     </div>
   </div>
     <div class="card">
-    <a href="http://localhost:3000/FishInfo"/>
-      <img class="card-img-top" src={image} alt="Card image cap"/>
+    <Link to="/FishInfo">
+    <img class="card-img-top" src={image} alt="Card image cap"/>
+    </Link>
       <div class="card-body">
         <p class="card-text">Fish name</p>
       </div>
     </div>
     <div class="card">
-    <a href="http://localhost:3000/FishInfo"/>
-      <img class="card-img-top" src={image} alt="Card image cap"/>
+    <Link to="/FishInfo">
+    <img class="card-img-top" src={image} alt="Card image cap"/>
+    </Link>
       <div class="card-body">
         <p class="card-text">Fish name</p>
       </div>
     </div>
     <div class="card">
-    <a href="http://localhost:3000/FishInfo"/>
-      <img class="card-img-top" src={image} alt="Card image cap"/>
+    <Link to="/FishInfo">
+    <img class="card-img-top" src={image} alt="Card image cap"/>
+    </Link>
       <div class="card-body">
         <p class="card-text">Fish name</p>
       </div>
     </div>
     <div class="card">
-    <a href="http://localhost:3000/FishInfo"/>
-      <img class="card-img-top" src={image} alt="Card image cap"/>
+    <Link to="/FishInfo">
+    <img class="card-img-top" src={image} alt="Card image cap"/>
+    </Link>
       <div class="card-body">
         <p class="card-text">Fish name</p>
       </div>
     </div>
     <div class="card">
-    <a href="http://localhost:3000/FishInfo"/>
-      <img class="card-img-top" src={image} alt="Card image cap"/>
+    <Link to="/FishInfo">
+    <img class="card-img-top" src={image} alt="Card image cap"/>
+    </Link>
       <div class="card-body">
         <p class="card-text">Fish name</p>
       </div>
     </div>
     <div class="card">
-    <a href="http://localhost:3000/FishInfo"/>
-      <img class="card-img-top" src={image} alt="Card image cap"/>
+    <Link to="/FishInfo">
+    <img class="card-img-top" src={image} alt="Card image cap"/>
+    </Link>
       <div class="card-body">
         <p class="card-text">Fish name</p>
       </div>
     </div>
     <div class="card">
-    <a href="http://localhost:3000/FishInfo"/>
-      <img class="card-img-top" src={image} alt="Card image cap"/>
+    <Link to="/FishInfo">
+    <img class="card-img-top" src={image} alt="Card image cap"/>
+    </Link>
       <div class="card-body">
         <p class="card-text">Fish name</p>
       </div>
     </div>
     <div class="card">
-    <a href="http://localhost:3000/FishInfo"/>
-      <img class="card-img-top" src={image} alt="Card image cap"/>
+    <Link to="/FishInfo">
+    <img class="card-img-top" src={image} alt="Card image cap"/>
+    </Link>
       <div class="card-body">
         <p class="card-text">Fish name</p>
       </div>
     </div>
     <div class="card">
-    <a href="http://localhost:3000/FishInfo"/>
-      <img class="card-img-top" src={image} alt="Card image cap"/>
+    <Link to="/FishInfo">
+    <img class="card-img-top" src={image} alt="Card image cap"/>
+    </Link>
       <div class="card-body">
         <p class="card-text">Fish name</p>
       </div>
     </div>
     <div class="card">
-    <a href="http://localhost:3000/FishInfo"/>
-      <img class="card-img-top" src={image} alt="Card image cap"/>
+    <Link to="/FishInfo">
+    <img class="card-img-top" src={image} alt="Card image cap"/>
+    </Link>
       <div class="card-body">
         <p class="card-text">Fish name</p>
       </div>
