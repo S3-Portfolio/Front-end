@@ -16,17 +16,11 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore "./menu-service/" 
+      run: dotnet restore "./divespot/" 
     - name: Build
-      run: dotnet build --no-restore "./menu-service/"
+      run: dotnet build --no-restore "./divespot/"
     - name: Test
-      run: dotnet test --no-build --verbosity normal "./menu-service/"
-    - name: Upload documentation file
-      uses: actions/upload-artifact@v3
-      with:
-        name: docs
-        path: ./menu-service/menu-service/api-menu.yaml
-        retention-days: 1
+      run: dotnet test --no-build --verbosity normal "./divespot/"
 
   deployment:
     name: deployment
@@ -48,4 +42,4 @@ jobs:
           context: ./divespot/
           file: ./Front-end/divespot/Dockerfile
           push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/menu-service:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/divespot:latest
