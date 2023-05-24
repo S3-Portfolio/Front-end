@@ -1,7 +1,24 @@
 
-import React from 'react';
+import React, {useState,useEffect} from 'react';
   
 const Dive = () => {
+  const [dives, setDives] = useState([]);
+  async function logJSONData() {
+    const response = await fetch("https://localhost:7033/api/Dive");
+    const jsonData = await response.json();
+    setDives(jsonData);
+    console.log(jsonData);
+  }
+  useEffect(() => {
+    const apiUrl = `https://localhost:7033/api/Dive`;
+  
+    fetch(apiUrl)
+    
+    .then((response) => response.json())
+    
+     .then((data) => setDives(data));
+    }, [])
+
   return (
     <div
       style={{
@@ -16,52 +33,22 @@ const Dive = () => {
           <tr>
             <th scope="col"></th>
             <th scope="col">Dive name</th>
-            <th scope="col">Location</th>
-            <th scope="col">Company</th>
+            <th scope="col">Depth</th>
+            <th scope="col">Duration</th>
             <th scope="col">Likes</th>
           </tr>
         </thead>
         <tbody>
-        <a href="http://localhost:3000/DiveInfo">
-          <tr onclick="window.location='http://localhost:3000/DiveInfo'">
-            <th scope="row">1</th>
-            <td>Lorem Ipsum</td>
-            <td>Lorem Ipsum</td>
-            <td>Lorem Ipsum</td>
-            <td>100</td>
-          </tr></a>
+        {dives.map((Dive) => (
           <a href="http://localhost:3000/DiveInfo">
-          <tr onclick="window.location='http://localhost:3000/DiveInfo'">
-            <th scope="row">2</th>
-            <td>Lorem Ipsum</td>
-            <td>Lorem Ipsum</td>
-            <td>Lorem Ipsum</td>
+          <tr>
+            <th scope="row">{Dive.id}</th>
+            <td>{Dive.name}</td>
+            <td>{Dive.depth}</td>
+            <td>{Dive.duration}</td>
             <td>100</td>
           </tr></a>
-          <a href="http://localhost:3000/DiveInfo">
-          <tr onclick="window.location='http://localhost:3000/DiveInfo'">
-            <th scope="row">3</th>
-            <td>Lorem Ipsum</td>
-            <td>Lorem Ipsum</td>
-            <td>Lorem Ipsum</td>
-            <td>100</td>
-          </tr></a>
-          <a href="http://localhost:3000/DiveInfo">
-          <tr onclick="window.location='http://localhost:3000/DiveInfo'">
-            <th scope="row">4</th>
-            <td>Lorem Ipsum</td>
-            <td>Lorem Ipsum</td>
-            <td>Lorem Ipsum</td>
-            <td>100</td>
-          </tr></a>
-          <a href="http://localhost:3000/DiveInfo">
-          <tr onclick="window.location='http://localhost:3000/DiveInfo'">
-            <th scope="row">5</th>
-            <td>Lorem Ipsum</td>
-            <td>Lorem Ipsum</td>
-            <td>Lorem Ipsum</td>
-            <td>100</td>
-          </tr></a>
+        ))}
         </tbody>
       </table>
     </div>

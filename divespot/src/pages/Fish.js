@@ -22,16 +22,15 @@ const Fish = () => {
     console.log(jsonData);
   }
   useEffect(() => {
+    const apiUrl = `https://localhost:7033/api/Fish`;
+  
+    fetch(apiUrl)
+    
+    .then((response) => response.json())
+    
+     .then((data) => setFishes(data));
+    }, [])
 
-    
-            const apiUrl = `https://localhost:7033/api/Fish`;
-    
-            fetch(apiUrl)
-    
-              .then((response) => response.json())
-    
-              .then((data) => setFishes(data));
-      }, [])
   return (
     <div
       style={{
@@ -45,7 +44,7 @@ const Fish = () => {
       <div id='fishcard'>
         {fishes.map((Fish) => (
           <div class="card"> 
-          <Link to="/FishInfo">
+          <Link to={{ pathname: "/FishInfo", state: { id: Fish.id }}}>
           <img class="card-img-top" src={Fish.img} alt="Card image cap"/>
           </Link>
           <div class="card-body">

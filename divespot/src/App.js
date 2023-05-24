@@ -20,8 +20,8 @@ function App() {
         <Route path='/Fish' element ={<Fish/>}></Route>
         <Route path='/About' element ={<About/>}></Route>
         
-        <Route path='/FishInfo' element ={<FishInfo/>}></Route>
-        <Route path='/DiveInfo' element ={<DiveInfo/>}></Route>
+        <Route path='/FishInfo/:id' element ={<FishInfo/>}></Route>
+        <Route path='/DiveInfo/:id' element ={<DiveInfo/>}></Route>
       </Routes>
     </Router>
   );
