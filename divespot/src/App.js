@@ -9,22 +9,22 @@ import Fish from './pages/Fish';
 import FishInfo from './pages/FishInfo';
 import DiveInfo from './pages/DiveInfo';
 //import SignUp from './pages/signup';
-  
+
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
-        <Route path='/' exact element ={<Home/>}></Route>
-        <Route path='/Dive' element ={<Dive/>}></Route>
-        <Route path='/Fish' element ={<Fish/>}></Route>
-        <Route path='/About' element ={<About/>}></Route>
-        
-        <Route path='/FishInfo/:id' element ={<FishInfo/>}></Route>
-        <Route path='/DiveInfo/:id' element ={<DiveInfo/>}></Route>
+        <Route path='/' exact element={<Home />}></Route>
+        <Route path='/Dive' element={<Dive />}></Route>
+        <Route path='/Fish' element={<Fish />}></Route>
+        <Route path='/About' element={<About />}></Route>
+
+        <Route path='/FishInfo/:id' element={<FishInfo />}></Route>
+        <Route path='/DiveInfo/:id' element={<DiveInfo />}></Route>
       </Routes>
     </Router>
   );
 }
-  
+
 export default App;
