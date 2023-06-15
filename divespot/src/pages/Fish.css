@@ -1,12 +1,22 @@
-.card{
+.card {
+    width: 15rem;
+    height: 15rem;
+}
+
+.card-img-top {
     width: 15rem;
 }
 
-.card-img-top{
-    width: 15rem;
-}
-
-#fishcard{
+#fishcard {
     display: contents;
     flex-wrap: wrap;
+}
+
+#searchbar {
+    height: fit-content;
+}
+
+#searchbarContainer {
+    display: flex;
+    align-items: baseline;
 }

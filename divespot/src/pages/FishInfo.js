@@ -42,7 +42,9 @@ const FishInfo = () => {
             <p className='card-text'>{fish.name}</p>
           </div>
         </div>
+
         <h1>{fish.sName}</h1>
+
         <h2>{fish.depth}</h2>
         <p>Lorem ipsum dolor sit amet. </p>
         <p>

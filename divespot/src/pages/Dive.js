@@ -37,12 +37,15 @@ const Dive = () => {
         height: '100vh'
       }}
     >
-      <input
-        type="text"
-        placeholder="Search dives"
-        value={searchTerm}
-        onChange={handleSearch}
-      />
+      <div id='searchbarContainer'>
+        <input
+          id='searchbar'
+          type="text"
+          placeholder="Search dives"
+          value={searchTerm}
+          onChange={handleSearch}
+        />
+      </div>
       <table class="table table-hover">
         <thead>
           <tr>

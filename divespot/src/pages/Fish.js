@@ -38,12 +38,15 @@ const Fish = () => {
         height: '100vh',
       }}
     >
-      <input
-        type="text"
-        placeholder="Search fishes"
-        value={searchTerm}
-        onChange={handleSearch}
-      />
+      <div id='searchbarContainer'>
+        <input
+          id='searchbar'
+          type="text"
+          placeholder="Search fishes"
+          value={searchTerm}
+          onChange={handleSearch}
+        />
+      </div>
       <div id='fishcard'>
         {filteredFishes.map((fish) => (
           <div class="card">
